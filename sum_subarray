@@ -1,0 +1,16 @@
+def sum_subarray(arr,k):
+    n=len(arr)
+    window_state=0
+    for i in range(k):
+        window_state+=arr[i]
+    print(window_state)
+
+    for i in range(k,n):
+        window_state+=arr[i]
+        window_state-=arr[i-k]
+        print(window_state)
+
+arr=[2,1,5,1,3,2]
+k=3
+
+sum_subarray(arr,k)
