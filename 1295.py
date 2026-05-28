@@ -6,4 +6,4 @@ class Solution:
             if len(str(num)) % 2 == 0:
                 count += 1
 
-        return count1
+        return count
